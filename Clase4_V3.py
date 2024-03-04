@@ -45,17 +45,15 @@ class Sistema:
             return True
         return False
             
-            
+
     def verDatosPaciente(self, c):
-        if self.verificarPaciente(c) == False:
-            return None
         for p in self.__lista_pacientes:
-            #retorne la cedula y la comparo con la ingresada por teclado
             if c == p.verCedula():
-                return p #si encuentro el paciente lo retorno
+                return p
+    
             
     def verNumeroPacientes(self):
-        print("En el sistema hay: " + str(len(self.__lista_pacientes)) + " pacientes") 
+        print(f"En el sistema hay:{len(self.__lista_pacientes)} pacientes")
 
 def main():
     sis = Sistema() 
