@@ -99,10 +99,9 @@ def main():
             break 
 
 #aca el python descubre cual es la funcion principal
+        
 if __name__ == "__main__":
-    main() 
-        
-        
+    main()    
         
         
         
