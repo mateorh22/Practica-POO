@@ -1,4 +1,6 @@
+# NO hay herencia
 
+# Hay encapuslamiento en pacientes para mantener los atributos privados
 class Paciente:
 
     def __init__(self):
