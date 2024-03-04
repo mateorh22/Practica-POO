@@ -21,7 +21,7 @@ class Paciente:
     def verServicio(self):
         return self.__servicio 
 
- # los metodos 'asignatNombre(n)','asignarCedula(c)','asignarGenero(g)'. son setters  
+ # los metodos 'asignarNombre(n)','asignarCedula(c)','asignarGenero(g)'. son setters  
     # metodos set
     def asignarNombre(self,n):
         self.__nombre = n 
@@ -40,9 +40,12 @@ class Sistema:
         return any(cedula == p.verCedula() for p in self.__lista_pacientes)
         
     def ingresarPaciente(self,pac):
-        self.__lista_pacientes.append(pac)
-        return True
-    
+        if not self.verificarPaciente(pac.verCedula()):
+            self.__lista_pacientes.append(pac)
+            return True
+        return False
+            
+            
     def verDatosPaciente(self, c):
         if self.verificarPaciente(c) == False:
             return None
