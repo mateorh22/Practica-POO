@@ -1,5 +1,7 @@
 # NO hay herencia
+# No hay polimorfismo
 
+# el constructor ('__init__') se encuentra en las clases 'Paciente' y 'Sistema'
 # Hay encapuslamiento en pacientes para mantener los atributos privados
 class Paciente:
 
@@ -8,7 +10,7 @@ class Paciente:
         self.__cedula = 0 
         self.__genero = '' 
         self.__servicio = '' 
-              
+ # los metodos 'verNombre(),'verCedula()','verGenero()','verServicio()' son getters             
     #metodos get    
     def verNombre(self):
         return self.__nombre 
@@ -18,6 +20,8 @@ class Paciente:
         return self.__genero 
     def verServicio(self):
         return self.__servicio 
+
+ # los metodos 'asignatNombre(n)','asignarCedula(c)','asignarGenero(g)'. son setters  
     # metodos set
     def asignarNombre(self,n):
         self.__nombre = n 
