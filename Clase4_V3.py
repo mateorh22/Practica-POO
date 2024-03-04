@@ -37,10 +37,7 @@ class Sistema:
         self.__lista_pacientes = [] 
         
     def verificarPaciente(self,cedula):
-        for p in self.__lista_pacientes:
-            if cedula == p.verCedula():
-                return True 
-        return False
+        return any(cedula == p.verCedula() for p in self.__lista_pacientes)
         
     def ingresarPaciente(self,pac):
         self.__lista_pacientes.append(pac)
