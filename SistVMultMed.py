@@ -1,3 +1,10 @@
+#No hay polimorfismo
+#No hay herencia
+
+# 'asignarNombre','asignarDosis' actuan como setters y 'verNombre','verDosis' actuan getters
+# En 'Medicamento' hay constructores ('__init__') para crear un nuevo objeto  de la clase Medicamento.
+# En 'Medicamento' hay encapsulamiento ('__')  para proteger los atributos internos de la clase (nombre, dosis y
+
 class Medicamento:
     def __init__(self):
         self.__nombre = "" 
@@ -12,7 +19,11 @@ class Medicamento:
         self.__nombre = med 
     def asignarDosis(self,med):
         self.__dosis = med 
-        
+
+#'asignarNombre','asignarHistoria','asignarPeso' actuan como setters y 'verNombre','verHitoria','verPeso' actuan getters
+# En 'Mascota' hay encapsulamiento ('__')  para proteger los atributos internos de la clase 
+# En 'Mascota' hay constructores ('__init__') para crear un nuevo objeto  de la clase Mascota.        
+
 class Mascota:
     
     def __init__(self):
