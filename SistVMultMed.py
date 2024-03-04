@@ -6,9 +6,9 @@
 # En 'Medicamento' hay encapsulamiento ('__')  para proteger los atributos internos de la clase (nombre, dosis y
 
 class Medicamento:
-    def __init__(self):
-        self.__nombre = "" 
-        self.__dosis = 0 
+    def __init__(self, nombre="",dosis=0):
+        self.__nombre = nombre
+        self.__dosis = dosis
     
     def verNombre(self):
         return self.__nombre 
