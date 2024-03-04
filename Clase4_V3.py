@@ -1,5 +1,7 @@
-# Inicion
+
+# cmamcpe'
 class Paciente:
+
     def __init__(self):
         self.__nombre = '' 
         self.__cedula = 0 
